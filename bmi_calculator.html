@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js library -->
+</head>
+<body>
+    <header>
+        <h1>BMI Calculator</h1>
+        <p>Calculate your Body Mass Index and track your progress over time.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="health_info.html">Health Info</a></li>
+            <li><a href="bmi_calculator.html">BMI Calculator</a></li>
+            <li><a href="exercise_info.html">Exercise Info</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Calculate Your BMI</h2>
+        <form>
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" required>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" required>
+
+            <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+        </form>
+
+        <p><strong>Your BMI:</strong> <span id="bmiResult">0</span></p>
+        <p><strong>Category:</strong> <span id="bmiCategory"></span></p>
+    </section>
+
+    <!-- BMI History Section -->
+    <section>
+        <h2>Your BMI History</h2>
+        <table id="bmiHistoryTable">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>BMI</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- History will be injected here -->
+            </tbody>
+        </table>
+        <button type="button" onclick="resetBMIHistory()">Reset History</button> <!-- Reset button -->
+        <h3>BMI Progress Chart</h3>
+        <canvas id="bmiChart" width="400" height="200"></canvas> <!-- Chart canvas -->
+    </section>
+
+    <!-- BMI Categories Table -->
+    <section>
+        <h2>BMI Categories</h2>
+        <table border="1" cellpadding="10" style="margin: 20px auto; width: 80%; text-align: left; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>BMI Range</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Under 18.5</td>
+                    <td>Underweight</td>
+                    <td>Below the normal weight range. May indicate malnutrition or other health issues.</td>
+                </tr>
+                <tr>
+                    <td>18.5 - 24.9</td>
+                    <td>Normal weight</td>
+                    <td>Within the ideal weight range for most adults. Indicates a healthy balance between height and weight.</td>
+                </tr>
+                <tr>
+                    <td>25.0 - 29.9</td>
+                    <td>Overweight</td>
+                    <td>Above the normal weight range. May increase the risk of developing health problems such as diabetes and cardiovascular diseases.</td>
+                </tr>
+                <tr>
+                    <td>30.0 and above</td>
+                    <td>Obesity</td>
+                    <td>Significantly above the normal weight range. Poses higher risk for various health issues, including heart disease, diabetes, and hypertension.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Health Awareness</p>
+    </footer>
+
+    <script src="bmiTracker.js"></script> <!-- Link the BMI tracker script -->
+</body>
+</html>

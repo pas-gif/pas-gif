@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Info</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Exercise Information</h1>
+        <p>Importance of Physical Activity and Exercise Routines</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="health_info.html">Health Info</a></li>
+            <li><a href="bmi_calculator.html">BMI Calculator</a></li>
+            <li><a href="exercise_info.html">Exercise Info</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Why Exercise Matters</h2>
+        <p>Regular physical activity is essential for maintaining a healthy body and mind. Here’s why incorporating exercise into your routine is so important:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Benefit</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Weight Management</td>
+                    <td>Exercise plays a crucial role in managing body weight by burning calories, which helps in weight loss and preventing weight gain. Combining exercise with a balanced diet can lead to sustainable weight management and reduce the risk of obesity-related conditions.</td>
+                </tr>
+                <tr>
+                    <td>Mental Health Improvement</td>
+                    <td>Physical activity has a significant positive impact on mental health. Regular exercise can reduce symptoms of anxiety, depression, and stress, stimulating the release of endorphins, which are natural mood lifters, thus enhancing overall emotional well-being.</td>
+                </tr>
+                <tr>
+                    <td>Strengthens Bones and Muscles</td>
+                    <td>Exercise, particularly weight-bearing and resistance activities, strengthens bones and muscles. This helps prevent osteoporosis and frailty with age, and improves balance and coordination, reducing the risk of falls and fractures.</td>
+                </tr>
+                <tr>
+                    <td>Enhances Cardiovascular Health</td>
+                    <td>Cardiovascular exercises improve heart health by increasing heart rate and promoting better blood circulation. Regular cardio workouts can lower blood pressure, improve cholesterol levels, and reduce the risk of heart disease and stroke.</td>
+                </tr>
+                <tr>
+                    <td>Boosts Immune System</td>
+                    <td>Engaging in moderate exercise can boost the immune system by promoting healthy circulation and reducing inflammation. Regular physical activity helps the body’s defense mechanisms work more efficiently, making you less susceptible to illnesses and infections.</td>
+                </tr>
+                <tr>
+                    <td>Improves Sleep Quality</td>
+                    <td>Physical activity can help regulate sleep patterns and improve overall sleep quality. Regular exercise reduces the time it takes to fall asleep, increases deep sleep stages, and helps manage sleep disorders such as insomnia.</td>
+                </tr>
+                <tr>
+                    <td>Enhances Cognitive Function</td>
+                    <td>Exercise is linked to improved cognitive function and memory. Physical activity increases blood flow to the brain, supporting better cognitive performance and protecting against age-related cognitive decline.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Types of Exercise</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Exercise Type</th>
+                    <th>Description</th>
+                    <th>Examples</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cardiovascular Exercise</td>
+                    <td>Activities that increase your heart rate and improve cardiovascular endurance. These exercises help in burning calories and improving overall heart health.</td>
+                    <td>Running, Swimming, Cycling, Jump Rope</td>
+                </tr>
+                <tr>
+                    <td>Strength Training</td>
+                    <td>Exercises that focus on building muscle strength and endurance. These activities help in increasing muscle mass and bone density, as well as improving metabolism.</td>
+                    <td>Weight Lifting, Bodyweight Exercises (e.g., Push-ups, Squats), Resistance Band Exercises</td>
+                </tr>
+                <tr>
+                    <td>Flexibility Training</td>
+                    <td>Exercises designed to improve the flexibility of muscles and joints. These activities help in increasing range of motion and reducing the risk of injuries.</td>
+                    <td>Yoga, Stretching Exercises, Pilates</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Fitness Tracker Section -->
+    <section>
+        <h2>Fitness Goal Tracker</h2>
+        <form id="fitnessForm">
+            <label for="goal">Enter your fitness goal (e.g., Run 5 km, 30 min cardio):</label>
+            <input type="text" id="goal" required>
+
+            <label for="progress">Current progress (e.g., 2 km, 15 min):</label>
+            <input type="text" id="progress" required>
+
+            <button type="button" onclick="addGoal()">Add Goal</button>
+        </form>
+
+        <h3>Your Goals</h3>
+        <table id="goalTable">
+            <thead>
+                <tr>
+                    <th>Goal</th>
+                    <th>Progress</th>
+                    <th>Completion</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Goals will be displayed here -->
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Health Awareness</p>
+    </footer>
+
+    <script src="fitnessTracker.js"></script>
+</body>
+</html>
